@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Eats - Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Delicious Eats</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Delicious Eats</h2>
+            <p>Your favorite spot for amazing food and great ambiance.</p>
+            <a href="#menu" class="btn">See Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/deluxe-pizza-pasta-f6ab20f6.jpg" alt="Pasta Dish">
+                <h3>Deluxe Pasta</h3>
+                <p>A creamy pasta dish with fresh herbs and cheese.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.saveur.com/uploads/2013/04/JTPSD2ONPYISBHIP4CJ5HDW55A_01.webp?auto=webp" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with fresh mozzarella, basil, and tomatoes.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5F8zAJeKDhtcrvF5RbRjbRLekkZ84ppaGg&s" alt="Burger">
+                <h3>Gourmet Burger</h3>
+                <p>Juicy burger with cheese, bacon, and all the fixings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We pride ourselves on offering an unforgettable dining experience with fresh ingredients, expertly prepared dishes, and a cozy atmosphere. Whether you're here for lunch or dinner, we make sure you leave satisfied.</p>
+    </section>
+
+<section class="testimonials-carousel">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel-container">
+        <div class="testimonial active">
+            <p>"The best pasta I've ever had! Highly recommend the Deluxe Pasta."</p>
+            <cite>- Sarah J.</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing ambiance and delicious food. The Margherita Pizza is a must-try!"</p>
+            <cite>- John D.</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Great service and the Gourmet Burger was out of this world!"</p>
+            <cite>- Emily R.</cite>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+    </div>
+</section>
+
+<section class="frequently-asked-questions">
+    <h4>Frequently Asked Questions</h4>
+    <div class="faq-item">
+        <button class="faq-question">What time is check-in and check-out?</button>
+        <div class="faq-answer">
+            <p>Check-in is at 3 PM and check-out is at 11 AM.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Do you offer room service?</button>
+        <div class="faq-answer">
+            <p>Yes, we offer 24/7 room service for all our guests.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Is breakfast included in the room rate?</button>
+        <div class="faq-answer">
+            <p>Yes, breakfast is included in all room rates.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Feel free to reach out to us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delicious Eats | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

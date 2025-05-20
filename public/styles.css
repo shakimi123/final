@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: url('https://tb-static.uber.com/prod/image-proc/processed_images/fa16eabf87525e37b5e84f1491790453/fb86662148be855d931b37d6c1e5fcbe.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#menu .menu-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.testimonials-carousel {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+.testimonial-carousel-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #e67e22;
+}
+.testimonial {
+    display: none;
+    transition: opacity 0.5s;
+    font-style: italic;
+    padding: 20px;
+    background: #d48686;
+    border-radius: 8px;
+}
+.testimonial.active {
+    display: block;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.carousel-btn.prev {
+    left: -40px;
+}
+.carousel-btn.next {
+    right: -40px;
+}
+
+/* FAQ Section Styling */
+.frequently-asked-questions {
+    background-color: #f0e68c;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.frequently-asked-questions h2 {
+    color: #b8860b;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.frequently-asked-questions .faq-item {
+    margin-bottom: 14px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: #e0c96b;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+    outline: none;
+}
+
+.faq-question:hover {
+    background: #d1b94f;
+}
+
+.faq-answer {
+    display: none;
+    background: #fff8dc;
+    padding: 10px 12px;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid #e0c96b;
+    border-top: none;
+    margin-bottom: 5px;
+    font-size: 0.98rem;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+/* ...existing code... */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
